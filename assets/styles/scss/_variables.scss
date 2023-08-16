@@ -1,0 +1,28 @@
+// Colors
+$purple: #6c63ff !default;
+$light-purple: #d7d4ff !default;
+$dark-10: #2a2a2a !default;
+$dark-20: #555 !default;
+$white: #ffff !default;
+$blue: #2962ff !default;
+$cyan: #63ecff !default;
+$pink: #f263ff !default;
+$green: #0bb08b !default;
+$tomato: #ff6347 !default;
+$red: #f93d3d !default;
+$gray: #e0e0e0 !default;
+
+$colors: (
+  red: $red,
+  cyan: $cyan,
+  pink: $pink,
+  green: $green,
+  purple: $purple,
+  tomato: $tomato
+);
+
+@each $key, $color in $colors {
+  .bg-#{"" + $key} {
+    background: $color;
+  }
+}

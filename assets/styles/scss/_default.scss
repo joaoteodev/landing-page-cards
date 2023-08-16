@@ -1,0 +1,35 @@
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 4rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+.title {
+  font-family: "Merriweather Sans", sans-serif;
+  color: #2a2a2a;
+  font-size: 4rem;
+}
+
+.button {
+  background: $purple;
+  font-weight: 700;
+  color: $white;
+  font-size: 2rem;
+  padding: 1rem 3rem;
+  border-radius: 1rem;
+  box-shadow: 2px 2px 20px rgba($purple, 0.5);
+  transition: 0.3s all ease;
+  cursor: pointer;
+  text-decoration: none;
+  display: block;
+  width: fit-content;
+
+  &:hover {
+    background: darken($purple, 10%);
+    transform: scale(1.02);
+  }
+}
